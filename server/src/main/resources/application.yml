@@ -28,13 +28,13 @@ spring:
       ddl-auto: validate
     properties:
       hibernate:
-        default_schema: airbnb_clone
+        #default_schema: airbnb_clone
   liquibase:
     contexts: dev
     change-log: classpath:db/changelog/master.xml
-    default-schema: airbnb_clone
+    #default-schema: airbnb_clone
     enabled: true
-  #    drop-first: true
+    #drop-first: true
   servlet:
     multipart:
       enabled: true
